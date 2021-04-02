@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml"> 
+<head>
+	<title>Formación Profesional</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--   ICONOS MATERIAL Designer
+	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	-->
+	 
+<!-- ICONOS fontawesome   ha sido necesario registrarse con fernando@fpsantacatalina.com
+https://fontawesome.com/kits/d069340608/use?welcome=yes
+clave : iconos
+-->
+  <!--LISTA DE ICONOS LIBRES     https://fontawesome.com/icons?d=gallery&p=2&m=free-->
+<script src="https://kit.fontawesome.com/d069340608.js" crossorigin="anonymous"></script>
+
+<style>
+	body {
+		font: 1.2em Helvetica, Arial, sans-serif;
+		margin: 5%;
+		padding: 0;
+		background-color: rgb(197, 221, 243);  
+  	}
+  	.contenedorUt {
+	    margin-left: 5%;
+		display: grid;
+  		grid-template-columns: 2fr 2fr;
+  		grid-template-rows:  1fr ;
+  		grid-row-gap: 2px;
+		
+ 	   
+    }
+
+	#datosciclo{
+		background-color:gray;
+		padding: 20px;
+		margin: 4%;
+		border-radius: 10px;
+	}
+	 
+	#datosciclo >p{
+		color:black;
+		font-size: xx-small;
+
+	}
+	.lineaUt {
+		 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		 font-size: 1em;
+		 color:dimgrey;
+		 font-weight: bold; 
+    }
+
+	#documenatacion .contenedorUt >p {
+		 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		 font-size: 1em;
+		 color:lightslategray;
+	}
+
+	.lineaUt::first-letter {
+  		font-size: 110%;
+		color: dimgray;
+	}
+
+	header{
+		align-items: center;color:lightslategray
+	} 
+	  
+	footer{font-size:small;color: darkolivegreen;
+	}
+
+
+	@media screen and (max-width:500px) 
+	{
+		.contenedorUt {
+			margin-left: 1%;
+			display: grid;
+			grid-template-columns: 1fr ;
+			grid-template-rows:  1fr ;
+			grid-row-gap: 5px;	
+		}
+    }
+
+	
+	  
+	#imagenTitulo{
+		display: block;
+		padding: 20%;
+		width:auto;height: 100px;
+	}
+
+	#titulo{
+			display: inline;	
+			vertical-align: text-top;
+	}
+	   
+	img { 
+		width: 100px;
+	    height: 100px;
+	}
+
+	  
+	#titulo{display:inline;	  margin-left: 2%; vertical-align:bottom;
+	}
+	 
+	h2{
+		  color: rgb(77, 192, 192);
+		  margin-left: 2%;
+	}
+
+	/* Responsive -----------------------------------------------------*/
+	main {
+		font: 1.2em Helvetica, Arial, sans-serif;	 
+		padding: 0;
+	/* max-width:504px;
+		min-width:504px; */
+		margin:auto;
+		
+      
+		display: grid;
+			grid-template-areas:  "a""
+								  " b"
+								   "c"
+								   "d"
+								 ;
+			
+			grid-template-rows: 110px auto auto auto auto 100px; 
+			grid-template-columns: 1fr; 
+  	}
+ 
+ 
+ 	@media all and (min-width:481px)   {
+		main {
+    
+			font: 1.2em Helvetica, Arial, sans-serif;	 
+			padding: 0;
+			max-width:1200px;
+			
+			background-color: rgb(237, 240, 243);   
+			display: grid;
+			
+			grid-template-areas:"a c "
+								"a b "
+								"d d"
+								"e e"
+								 ;
+		
+			grid-template-rows:auto auto auto  auto 100px; 
+			grid-template-columns: 0.5fr 5fr;
+ 	 	}
+  	}
+
+ 	.aCabecera{
+    grid-area:a; 	
+  	}
+  	.aTitulo{
+  	  grid-area:b; 	
+	}
+  
+  	.aEncabezado{
+	 
+	  grid-area:c;
+	}
+	.aMenuOpciones{
+	  grid-area:d;
+	}
+	.aDatos{
+	  grid-area:e;
+	  margin:2%;
+	}
+  
+	.fab{
+	font-size:36px;
+	} 
+	.fas{
+	font-size:36px;
+	} 
+	.far{
+	font-size:36px;
+	} 
+	 
+	 /* Menu -------------------------------------------------------------- */
+	 ul{
+		list-style-type:none;
+	 }
+	 ul li{
+		 display: inline;
+	 }
+	 ul li i{
+		font-size:medium;
+		display: inline;
+		padding: 15px;
+		border: rgb(83, 83, 85) solid 8px;
+		margin: 10px;
+	    background-color:  rgb(77, 192, 192);
+
+
+
+	 }
+
+</style>
+ 
+ 
+</head>
+<body>
+	<main>
+		<header class="aCabecera">		
+				
+				<picture>
+					<source 
+						media="(min-width: 500px)" 
+						srcset="curso.png">
+					<img id="imagenTitulo" src="Catalina.png" alt="Logo CIFP">
+				</picture>
+			
+			
+		</header>
+		<section class="aTitulo" >
+			<h1 id="titulo" > Desarrollo Web en la parte cliente</h1>
+		</section>         
+		<section class="aEncabezado" id="datosciclo">
+					 
+				<h2> Curso    :2º Desarrollo de Aplicaciones Web </h2>			
+				<p>Modulo     :Desarrollo Web en la parte cliente</p>
+				<p>Traea      :Crear un interfaz que implemente un CRUD contra una base de datos NoSql en Firebase </p>
+				<p>Contenidos :Api Rest, CRUD, NoSql, Firebase, conexiones asincrónas, código de estado</p>
+				<p>PROMESAS   :https://lemoncode.net/lemoncode-blog/2018/1/29/javascript-asincrono</p>
+				<p>Api Rest GitHub   :https://docs.github.com/es/rest</p>
+		 
+			
+		</section>
+
+		<section class="aMenuOpciones" id="menuCrud" >
+		  
+					<h2 id="idOpciones"> Menú de Opciones</h2>
+		 
+			
+		<ul>
+			<i class="fab fa-buffer" onclick=" cambioMenu()"></i>	
+			<li> 	<i class="fab fa-readme" title="Leer objetos" id="bLeerObjetos"> </i></li>	
+			<li> 	<i class="fas fa-book-reader" title="Leer por Id " id="bLeerId"> </i>	</li>	
+			<li> 	<i class="fas fa-edit" title="Grabar objeto" id="bGrabar"></i>  	</li>	
+			<li> 	<i class="far fa-edit" title="Actualizar objeto" id="bActualizar"></i>  </li>	
+			<li> 	<i class="fas fa-trash-alt" title="Borrar objeto" id="bBorrar"></i>  	</li>
+			<li> 	<i class="fas fa-forward" title="Siguiente" id="bSiguiente"></i> 	</li>
+			<li> 	<i class="fas fa-backward" title="Anterior" id="bAnterior"></i> 	</li>
+			 
+	
+			
+			<!--<i class="fab fa-accusoft"></i>-->
+		</ul>	 
+		
+		</section>
+		<section class="aDatos">
+		 
+				<fieldset>
+				  <legend>Datos del objeto</legend>
+				  <p>
+					<label>Mensajes <label   name="mensajes" id="mensajes"   style="color:orangered" ></label>
+				  </p>
+				  <p>
+					<label>Id: <input type="number" name="cId" id="cId" required></label>
+				  </p>
+				  <p>
+					<label>Nombre del objeto: <input type="text" name="cNombre" id="cNombre"  required></label>
+				  </p>
+				  <p>
+					<label>Descripción: <input type="text" name="cDescripcion" id="cDescripcion"></label>
+				  </p>
+				  <p>
+					<label>Iciono: <input type="file" style="display: none" name="cIcono" id="cIcono"  accept="image/png, image/jpeg" >
+						<span id="nombreArchivoLeido" style="color: mediumturquoise;"> Selecciona Archivo</span>
+					</label>
+				  <p>
+					<label>Latitud: <input type="text" name="cLatitud" id="cLatitud" required></label>
+				  </p>
+				  <p>
+					<label>Longitud: <input type="text" name="cLongitud" id="cLongitud" required></label>
+				  </p>
+				  <p>
+					<label>Trazado: <input type="text" name="cTrazado" id="cTrazado"  ></label>
+				  </p>
+				  <p>
+					<label>Tipo: 
+						<select id="cTipo">
+							<option value="">Selecciona el tipo de objeto</option>
+							<option value="Mobiliario">Mobiliario</option>
+							  <option value="Decoracion">Decoracion</option>
+							  <option value="Agua potbale">Decoracion</option>
+							  <option value="Agua sucia">Agua sucia</option>
+							  <option value="Linea Datos">Linea Datoss</option>
+							  <option value="Linea Eléctrica">Linea Eléctricas</option>
+							  <option value="Utilidad">Utilidad</option>
+							  <option value="Otros">Otros</option>
+						</select>
+					</label>
+				  </p>
+				</fieldset>
+		</section>
+		<aside>		
+		</aside>
+
+		<footer>								
+			Desarrollo de Aplicaciones Web(<cite>DAW</cite>) &copy;   CIFP Santa Catalina
+		</footer>
+	</main> 
+
+
+	
+<script>
+
+	 
+	// --------------------------JavaScirpt---------------------------------------------
+	function cambioMenu()
+	{
+		grid_template_areas=  '"a c" "a b "	 "d e" "d e"' ;
+		 
+
+		var principal = document.querySelector('main');
+	 
+		 principal.style.gridTemplateAreas =grid_template_areas;
+
+		 // recorre los elemento ul li 
+		var ul_li = document.querySelectorAll('ul li');
+
+		ul_li.forEach(function(elemento) {
+			elemento.style.fontSize="12px";
+ 			elemento.style.display="block";
+		});
+
+		var ul_li = document.querySelectorAll('ul li i');
+			ul_li.forEach(function(elemento) {
+					elemento.style.fontSize="12px";
+	 
+			});
+
+			idOpciones.style.display="none"
+
+			var cajaDatos = document.querySelector('.aDatos');
+			cajaDatos.style.marginTop="100px";
+	 }
+ // Trabajo con la bd Firebase -----------------------------------------------------
+ 	
+ //var boton= document.getElementById("bLeerObjetos");
+ // Leer todos los registros de objetos --------------------------------------------------------------------
+ var objetos; 
+ bLeerObjetos.addEventListener('click', function() {
+	mensajes.innerText=" ";
+	var req = new XMLHttpRequest();
+	req.open('GET', "http://localhost:5000/apirestnjsfb/us-central1/app/api/objetos", true);
+	req.onreadystatechange = function (aEvt) {
+  	if (req.readyState == 4) {
+     if(req.status == 200)
+	 {
+     
+	  objetos= JSON.parse(req.responseText);
+	 
+	  visualizaRergistro(objetos.resultado[0])
+	}
+     else
+	 //alert("Error loading page\n");
+	mensajes.innerText="Error lectura de objetos";
+  	}
+};
+req.send(null);
+
+
+ });
+// Leer todos los registros de objetos --------------------------------------------------------------------
+
+// Leer un registrom por id----------------------------------------------------------------------------
+bLeerId.addEventListener('click', function() {
+	mensajes.innerText=" ";
+	if(cId.value==""){
+		cNombre.value="Introduce en Id el número de id del registro a leer"
+		return;
+	}
+	leerUnRegistor();
+});
+
+ /// Registro siguiente ------------------------------------------------------
+bSiguiente.addEventListener('click', function() {
+	mensajes.innerText=" ";
+	if(cId.value==""){
+		mensajes.innerText="Introduce en Id el número de id del registro a leer"
+		
+		return;
+	}
+	cId.value= (new Number(cId.value))+1;
+	leerUnRegistor();
+});
+ /// Registro siguiente ------------------------------------------------------
+/// Registro Anterior ------------------------------------------------------
+bAnterior.addEventListener('click', function() {
+	mensajes.innerText=" ";
+	if(cId.value==""){
+		cNombre.value="Introduce en Id el número de id del registro a leer"
+		return;
+	}
+	cId.value= (new Number(cId.value))-1;
+	leerUnRegistor();
+});
+/// Registro Anterior ------------------------------------------------------
+function leerUnRegistor()
+{
+//var url="http://localhost:5000/apirestnjsfb/us-central1/app/api/objetos/7"
+var url="http://localhost:5000/apirestnjsfb/us-central1/app/api/objetos/"+ cId.value;
+	var req = new XMLHttpRequest();
+	req.open('GET', url, true);
+	req.onreadystatechange = function (aEvt) {
+  	if (req.readyState == 4) {
+     if(req.status == 200)
+	 {
+     
+	  objetos= JSON.parse(req.responseText);
+	  
+	  visualizaRergistro(objetos.resultado)
+	}
+     else
+	 mensajes.innerText="Nº de id no existente\n";
+	// alert("Nº de id no existente\n");
+  	}
+};
+req.send(null);
+
+}
+// Leer un registrom por id----------------------------------------------------------------------------
+
+// Visualiza regisro
+function visualizaRergistro(registro)
+{
+	mensajes.innerText=" ";
+	cId.value=registro.id
+	cNombre.value=registro.nombre
+	cDescripcion.value=registro.descripcion
+	//cIcono.innertext=registro.icono
+	nombreArchivoLeido.innerText=registro.icono
+	cLatitud.value=registro.latitud
+	cLongitud.value=registro.longitud
+	cTrazado.value=registro.trazado
+    var tipoLeido=registro.tipo ;
+	for (i = 0; i < cTipo.length; i++) {
+  		 var tiposelect=cTipo.options[i].text;
+		 
+		  if (tipoLeido ===  tiposelect)
+		  {  
+			cTipo.selectedIndex=i;
+			break;
+		  }
+	}
+	 
+ 
+}
+// Grabar nuevo registrom por id----------------------------------------------------------------------------
+
+bGrabar.addEventListener('click', function() 
+{
+	mensajes.innerText=" ";
+	var url = 'http://localhost:5000/apirestnjsfb/us-central1/app/api/objetos/';
+	var data = {id: cId.value,
+			nombre:cNombre.value,
+			descripcion:cDescripcion.value,
+			icono:nombreArchivoLeido.innerText,
+			latitud:cLatitud.value,
+			longitud:cLongitud.value,
+			trazado:cTrazado.value,
+			tipo:cTipo.value
+			};
+ 
+
+	fetch(url, {
+		method: 'POST', // or 'PUT'
+		body: JSON.stringify(data), // data can be `string` or {object}!
+		headers:{
+			'Content-Type': 'application/json'
+		}
+	}).then(res => res.json())
+	.catch(error => console.error('Error:', error))
+	.then(response => console.log('Success:', response));
+
+});
+// Grabar nuevo registrom por id----------------------------------------------------------------------------
+
+
+// Actualizar nuevo registrom por id----------------------------------------------------------------------------
+
+bActualizar.addEventListener('click', function() 
+{	mensajes.innerText=" ";
+	var url="http://localhost:5000/apirestnjsfb/us-central1/app/api/objetos/"+ cId.value;
+	 
+	var data = {id: cId.value,
+			nombre:cNombre.value,
+			descripcion:cDescripcion.value,
+			icono:nombreArchivoLeido.innerText,
+			latitud:cLatitud.value,
+			longitud:cLongitud.value,
+			trazado:cTrazado.value,
+			tipo:cTipo.value
+			};
+
+			
+
+	fetch(url, {
+		method: 'PUT', // or 'PUT'
+		body: JSON.stringify(data), // data can be `string` or {object}!
+		headers:{
+			'Content-Type': 'application/json'
+		}
+	}).then(res => res.json())
+	.catch(error => console.error('Error:', error))
+	.then(response => console.log('Success:', response));
+
+});
+// Actualizar nuevo registrom por id----------------------------------------------------------------------------
+
+
+// Borrar registro por el id actual
+bBorrar.addEventListener('click', function() 
+{	mensajes.innerText=" ";
+	var url="http://localhost:5000/apirestnjsfb/us-central1/app/api/objetos/"+ cId.value;
+	 
+	
+	
+	fetch(url, {
+		method: 'DELETE', // or 'PUT'	
+		headers:{
+			'Content-Type': 'application/json'
+		}
+	}).then(res => res.json())
+	.catch(error => console.error('Error:', error))
+	.then(response => console.log('Success:', response));
+
+});
+
+</script>
+</body>
+
+</html>
